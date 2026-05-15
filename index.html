@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Mustafa | Frontend Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="logo">MM.</div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-container">
+            <div class="hero-content glass-panel">
+                <span class="greeting">Hi, I'm</span>
+                <h1 class="glitch" data-text="Muhammad Mustafa">Muhammad Mustafa</h1>
+                <h3 class="role">Frontend Developer</h3>
+                <p>I build clean, responsive, and dynamic web experiences using modern HTML, CSS, and JavaScript.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content glass-panel">
+                <p>I’m a frontend developer passionate about creating modern and responsive web interfaces. I’ve completed hands-on projects using HTML and CSS and I’m continuously learning JavaScript and modern frameworks to build interactive and user-centric applications.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-panel">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic structures and SEO best practices.</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                    <p>Modern styling, animations, and maintainability.</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <i class="fas fa-layer-group skill-icon"></i>
+                    <h3>Flexbox</h3>
+                    <p>Efficient one-dimensional layouts.</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <i class="fas fa-th-large skill-icon"></i>
+                    <h3>CSS Grid</h3>
+                    <p>Complex 2D layouts and responsive blueprints.</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach for all screens.</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <i class="fab fa-github skill-icon"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaboration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="project-card glass-panel">
+                <div class="project-image">
+                    <img src="Screenshot 2026-01-29 122923.png" alt="Portfolio Website Preview">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <div class="tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Flexbox</span>
+                    </div>
+                    <p>A personal portfolio designed to showcase skills, projects, and contact information with a modern, responsive layout.</p>
+                    <a href="#" class="btn primary-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info glass-panel">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sonu7t4@gmail.com">sonu7t4@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/muhammad-mustafa-6b5a98286" target="_blank">Muhammad Mustafa</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form glass-panel">
+                    <form action="#" method="get">
+                        <div class="input-group">
+                            <label for="username">Name</label>
+                            <input type="text" name="username" id="username" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-panel">
+        <p><i class="fa-solid fa-copyright"></i> 2026 Muhammad Mustafa. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Simple JS for Hamburger Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
